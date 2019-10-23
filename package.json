@@ -14,8 +14,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
+    "format:fix": "pretty-quick --staged",
     "e2e": "ng e2e",
-    "format:fix": "pretty-quick --staged"
+    "tadm:build": "ng build tadm-common",
+    "npm:noopt": "npm install --no-optional",
+    "npm:install": "npm install",
+    "install-dependencies": "run-s npm:noopt tadm:build npm:install"
   },
   "private": true,
   "dependencies": {
@@ -69,5 +73,8 @@
     "hooks": {
       "pre-commit": "run-s format:fix lint:fix"
     }
+  },
+  "optionalDependencies": {
+    "@tadm/common": "file:dist/tadm-common"
   }
 }
