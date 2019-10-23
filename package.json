@@ -13,7 +13,9 @@
     "build": "npm run designer:build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint:fix": "ng lint --fix",
+    "e2e": "ng e2e",
+    "format:fix": "pretty-quick --staged"
   },
   "private": true,
   "dependencies": {
@@ -62,7 +64,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "run-s format:fix lint:fix"
     }
   }
 }
