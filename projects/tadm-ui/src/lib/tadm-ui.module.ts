@@ -6,4 +6,4 @@ import { ButtonComponent } from './button/button.component';
   imports: [],
   exports: [ButtonComponent]
 })
-export class TadmCommonModule {}
+export class TadmUiModule {}

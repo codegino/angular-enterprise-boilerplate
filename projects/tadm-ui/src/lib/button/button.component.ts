@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'tadm-common-button',
+  selector: 'tadm-ui-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })

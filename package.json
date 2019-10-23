@@ -16,7 +16,7 @@
     "lint:fix": "ng lint --fix",
     "format:fix": "pretty-quick --staged",
     "e2e": "ng e2e",
-    "tadm:build": "ng build tadm-common",
+    "tadm:build": "ng build tadm-ui",
     "npm:noopt": "npm install --no-optional",
     "npm:install": "npm install",
     "install-dependencies": "run-s npm:noopt tadm:build npm:install"
@@ -75,6 +75,6 @@
     }
   },
   "optionalDependencies": {
-    "@tadm/common": "file:dist/tadm-common"
+    "@tadm/ui": "file:dist/tadm-ui"
   }
 }

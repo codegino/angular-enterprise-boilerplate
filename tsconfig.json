@@ -14,8 +14,8 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "tadm-common": ["dist/tadm-common"],
-      "tadm-common/*": ["dist/tadm-common/*"]
+      "tadm-ui": ["dist/tadm-ui"],
+      "tadm-ui/*": ["dist/tadm-ui/*"]
     }
   },
   "angularCompilerOptions": {
