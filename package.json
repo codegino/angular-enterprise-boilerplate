@@ -7,6 +7,7 @@
     "designer:build": "ng build designer --prod",
     "designer:dev": "ng serve designer --configuration hmr -o --port 4200",
     "start": "npm run designer:serve",
+    "dev": "npm run designer:dev",
     "build": "npm run designer:build",
     "test": "ng test",
     "lint": "ng lint",
